@@ -27,4 +27,6 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
+
+    testImplementation 'org.assertj:assertj-core:3.16.1'
 }
