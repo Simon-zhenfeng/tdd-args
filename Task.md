@@ -22,12 +22,12 @@
     * 解析器中需要验证参数是否合法
     
 * 任务分解
-    * [ ] 解析参数bool，int，string类型，ArgsParser组装，驱动出子方法
-    * [ ] Args解析有值类型的参数（考虑多个参数）
-    * [ ] Args解析无值类型的参数（考虑多个参数）
-    * [ ] Schema解析string类型
-    * [ ] Schema解析bool类型
-    * [ ] Schema解析int类型
+    * [x] 解析参数bool，int，string类型，ArgsParser组装，驱动出子方法
+    * [x] Args解析有值类型的参数（考虑多个参数）
+    * [x] Args解析无值类型的参数（考虑多个参数）
+    * [x] Schema解析string类型
+    * [x] Schema解析bool类型
+    * [x] Schema解析int类型
     * [ ] Schema解析缺省类型
     * [ ] Schema返回无值类型值
     * [ ] 参数中的flag，没有包含在Schema中，抛出异常
