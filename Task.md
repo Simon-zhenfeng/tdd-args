@@ -35,9 +35,9 @@ then 获取到用户输入的参数值
 
 #### 任务拆分
 ##### args parser, 驱动架构
-* [ ] given schema，args then 获取到flag对应的参数
+* [x] given schema，args then 获取到flag对应的参数 -- 没完成
 * [ ] 如果参数内容和schema中的不符，抛出异常
-* [ ] 如果查询的参数与schema中的不符，抛出异常
+* [x] 如果查询的参数与schema中的不符，抛出异常 -- 没完成
 ##### args，直接考虑多个参数
 * [ ] 解析string类型参数，获取到string类型的值
 * [ ] 解析integer类型参数，获取到integer类型的值
