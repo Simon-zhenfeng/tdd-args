@@ -28,8 +28,8 @@
     * [x] Schema解析string类型
     * [x] Schema解析bool类型
     * [x] Schema解析int类型
-    * [ ] Schema解析缺省类型
-    * [ ] Schema返回无值类型值
+    * [x] Schema解析缺省类型
+    * [x] Schema返回无值类型值
     * [ ] 参数中的flag，没有包含在Schema中，抛出异常
     * [ ] 获取flag，没有在flag中，抛出异常
         

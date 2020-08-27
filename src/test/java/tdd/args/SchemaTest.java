@@ -13,4 +13,10 @@ public class SchemaTest {
         assertThat(schema.getValue("p")).isEqualTo(0);
         assertThat(schema.getValue("d")).isEqualTo("");
     }
+
+    @Test
+    public void when_input_flag_is_boolean_then_get_true() {
+        Schema schema = new Schema(new Args(new String[]{"-l"}), "l:boolean,d:string,p:integer");
+        assertThat(schema.getValue("l")).isEqualTo(true);
+    }
 }
