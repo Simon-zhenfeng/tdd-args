@@ -1,5 +1,6 @@
 package tdd.args;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -43,10 +44,13 @@ public class ArgsParser {
     }
 
     private void parseSchemas(String schemaAsString) {
-        
-        schemas.put("l", Schema.BOOLEAN);
-        schemas.put("p", Schema.INTEGER);
-        schemas.put("d", Schema.STRING);
+        Arrays.stream(schemaAsString.split(","))
+                .forEach(this::parseSchemaPair);
+    }
+
+    private void parseSchemaPair(String pair) {
+        String[] pairs = pair.trim().split(":");
+        schemas.put(pairs[0], Schema.of(pairs[1]));
     }
 
     //TODO 没有实现

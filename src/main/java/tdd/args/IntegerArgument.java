@@ -8,4 +8,9 @@ public class IntegerArgument extends Argument{
     public IntegerArgument(String flagName, Schema schema, String value) {
         super(flagName, schema, value);
     }
+
+    @Override
+    public Integer getValue() {
+        return Integer.valueOf(value);
+    }
 }

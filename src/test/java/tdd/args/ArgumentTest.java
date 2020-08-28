@@ -26,5 +26,25 @@ public class ArgumentTest {
         Argument argument = Argument.of("d", Schema.STRING, null);
         assertThat(argument).isInstanceOf(StringArgument.class);
     }
+
+    @Test
+    public void when_string_type_then_get_string_value() {
+        Argument argument = Argument.of("d", Schema.STRING, "/usr/tmp");
+        assertThat(argument.getValue()).isEqualTo("/usr/tmp");
+    }
+
+    @Test
+    public void when_boolean_type_then_get_boolean_value() {
+        assertThat(Argument.of("l", Schema.BOOLEAN, "true").getValue()).isEqualTo(true);
+        assertThat(Argument.of("l", Schema.BOOLEAN, null).getValue()).isEqualTo(true);
+        assertThat(Argument.of("l", Schema.BOOLEAN, "false").getValue()).isEqualTo(false);
+    }
+
+    @Test
+    public void when_integer_type_then_get_integer_value() {
+        assertThat(Argument.of("l", Schema.INTEGER, "80").getValue()).isEqualTo(80);
+    }
+
+
 }
 
